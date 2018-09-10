@@ -20,6 +20,12 @@ namespace ClassRoom
             Student studentTwo = new Student("Bastian", 7, 17);
             Student studentThree = new Student("Michael", 12, 29);
 
+            classroom.classlist.Add(studentOne);
+            classroom.classlist.Add(studentTwo);
+            classroom.classlist.Add(studentThree);
+
+            classroom.classlist.ForEach(Console.WriteLine);
+            // Output forkert, ved ikke hvorfor
 
         }
     }
